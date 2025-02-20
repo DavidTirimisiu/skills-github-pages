@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+
+  <title>WS playground</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/6222c13475.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<script src="main.js"></script>
+<div id="header">
+  <nav>
+
+    <ul>
+      <li><a href="#header">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">portofolio</a></li>
+      <li><a href="#contact">contact</a></li>
+
+
+    </ul>
+  </nav>
+  <div class="header-text">
+    <h1>Hi, i am <span>David</span><br> from Sheffield</h1>
+  </div>
+</div>
+<div id="about">
+  <div class="about">
+    <div class="row">
+      <div class="about-col-1">
+
+        <img src="Screenshots/david img.png" height="485" width="467"/></div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About me</h1>
+        <p>I see challenges as an opportunity to grow and become better at the work I do. I am committed to the deepening of my knowledge and developing my analytical skills that will be crucial for developing my career, whether that means tackling challenging technologies or staying up to date with the current and improved technologies. To significantly contributing to the advancement of technology, I want to successfully combine my strong analytical mindset with a strategic perspective. I aim to transform the technological landscape by bringing a fresh creative viewpoint and innovative solutions with my strong and determined mindset that is led by my passion for learning.</p>
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+          <p class="tab-links active-link" onclick="opentab('experince')">experince</p>
+          <p class="tab-links active-link" onclick="opentab('education')">education</p>
+
+        </div>
+
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+            <li><span>web development</span><br>Web app Development</li>
+            <li><span>App development</span><br>Building Android/IOS apps</li>
+          </ul>
+        </div>
+        <div class="tab-contents active-tab" id="experince">
+          <ul>
+            <li><span>6 weeks work experience at spi developments</span><br>
+            <li>Worked with a team to design a user interface for a flavour application system using WPF, a which helped learn how to work with a team efficiently and provided experience in WPF.</li>
+            <li>Attended meetings with clients and was able to learn all the skills needed when dealing with a client.</li>
+            <li>Created a login system for visitors that provided them a tag and stored other information using WPF and SQL database.</li>
+            </li>
+            <li><span>Warehouse operative, EVRI warehouse</span><br>
+            <li>worked with a team to sort out different parcels to their correct destinations.</li>
+            <li>Handled parcels which where being loaded unto a truck.</li>
+            </li>
+            <li><span>Sheffield Hallam transform, 5 days.</span><br>
+              <li>Attended a program at Sheffield Hallam that ran for 5 days which involved working with other people who are interested in computer science, we were given the opportunity to work in a team to come up with a solution to reducing the amount of carbon emissions which we then had to present it to an audience at the end.</li>
+            <li>Worked with a team conducted research and prepare reports on various topics related to carbon emissions, and other solutions which are currently available for reducing carbon emissions.
+            </li>
+            <li>Presented my project proposal to a group of over 100 people.</li>
+            </li>
+          </ul>
+        </div>
+
+          <div class="tab-contents active-tab" id="education">
+            <ul>
+              <li><span>KING ECGBERT SIXTH FORM</span><br>predicted A-levels: mathematics (A), COMPUTER SCIENCE (A),
+                PHYSICS (A)
+                </li>
+              <li><span>NEWFIELD SECONDARY SCHOOL</span><br>
+                GCSES : 8 GCSES (8-6), including a 7 in mathematics
+                and 6 in English language</li>
+            </ul>
+          </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+
+</div>
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">Services</h1>
+    <div class="services-list">
+      <div>
+
+        <h2>Web Development</h2>
+      </div>
+      <div>
+        <h2>App Development</h2>
+      </div>
+      <div>
+        <h2>UI/UX DESIGN</h2>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">Portfolio</h1>
+    <div class="work-list">
+      <div class="work">
+
+
+        <img src="Screenshots/img_4.png" height="576" width="475"/>
+        <div class="layer">
+          <h3>Social Media App</h3>
+          <p>The app connects you the talented people around the world</p>
+
+        </div>
+      </div>
+
+    <div class="work">
+      <a href="portfolio.html"><img src="Screenshots/img_3.png" height="576" width="458"/></a>
+      <div class="layer">
+        <h3>Social Media App</h3>
+        <p>The app connects you the talented people around the world</p>
+
+      </div>
+    </div>
+
+    </div>
+
+<div id="contact">
+  <div class="container"></div>
+  <div class="row">
+    <div class="contact-left">
+      <h1 class="sub-title">Contact</h1>
+      <p>EMAIL: davistirry@gmail.com</p>
+      <p>NUMBER: 07464804027</p>
+      <a href="Copy%20of%20david%20tirimisiu.pdf" class="btn btn2">Download Cv</a>
+    </div>
+    <div class="contact-right">
+      <form  name="submit-to-google-sheet">
+        <input type="text" placeholder="Your Name"  name="Name">
+        <input type="email" placeholder="Your Email" name="Email">
+        <label>
+          <textarea placeholder="Your Message"  name="Message" rows="6"></textarea>
+        </label>
+        <button onclick="david()" type="submit" class="btn btn2">Submit</button>
+      </form>
+      <span id="msg"></span>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname) {
+    for(tablink of tablinks) {
+      tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents) {
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+
+
+
+</script>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbz8v4CD48_rO4ewYrpPa4kgaMtfg-NzUzzpj_ps5xk3UcP088jSVYDB9Nwjyk2lZoyp/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById('msg')
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                  msg.innerHTML = "message sent successfully"
+                  setTimeout(function (){
+                    msg.innerHTML = ""
+                  },500)
+                  form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+
+
+</body>
+</html>
